@@ -15,7 +15,6 @@ public class ChangeColorOnCollision : MonoBehaviour
     //Если куб соприкасается с другим кубом, то меняем местами цвета у них
     void OnCollisionEnter(Collision other)
     {
-        Debug.Log("in collision");
         if (other.gameObject.CompareTag("Cube"))
         {
             _otherCubeMaterial = other.gameObject.GetComponent<MeshRenderer>().material;
