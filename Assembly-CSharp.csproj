@@ -45,10 +45,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\ActivateCubesOnStart.cs" />
-     <Compile Include="Assets\Scripts\MouseBehaviour.cs" />
-     <Compile Include="Assets\Scripts\PullObject.cs" />
-     <Compile Include="Assets\Scripts\SpawnNewCube.cs" />
+     <Compile Include="Assets\Scripts\FirstLevel\ActivateCubesOnStart.cs" />
+     <Compile Include="Assets\Scripts\FirstLevel\ChangeColorOnCollision.cs" />
+     <Compile Include="Assets\Scripts\FirstLevel\MouseBehaviour.cs" />
+     <Compile Include="Assets\Scripts\FirstLevel\PullObject.cs" />
+     <Compile Include="Assets\Scripts\FirstLevel\RestartButton.cs" />
+     <Compile Include="Assets\Scripts\FirstLevel\SpawnNewCube.cs" />
  <Reference Include="UnityEngine">
  <HintPath>E:/unity proj/2019.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
