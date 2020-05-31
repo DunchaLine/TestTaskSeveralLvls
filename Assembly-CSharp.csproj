@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\FirstLevel\PullObject.cs" />
      <Compile Include="Assets\Scripts\FirstLevel\RestartButton.cs" />
      <Compile Include="Assets\Scripts\FirstLevel\SpawnNewCube.cs" />
+     <Compile Include="Assets\Scripts\SecondLevel\UI.cs" />
      <Compile Include="Assets\Scripts\SecondLevel\ZoomCamera.cs" />
  <Reference Include="UnityEngine">
  <HintPath>E:/unity proj/2019.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
