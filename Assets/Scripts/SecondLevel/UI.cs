@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class UI : ZoomCamera
 {
-    private Camera _cam;
-    void Start()
-    {
-        _cam = base._mainCamera;
-    }
+    public Camera _cam2DView;
+    public Camera _cam3DView;
+    //Меняем вид камеры
     public void ThreeDView()
     {
-        if (base._mainCamera.orthographic == true)
+        if (_cam2DView.isActiveAndEnabled)
         {
-            base._mainCamera.orthographic = false;
+            _cam2DView.gameObject.SetActive(false);
+            _cam3DView.gameObject.SetActive(true);
         }
         else
         {
-            base._mainCamera.orthographic = true;
+            _cam3DView.gameObject.SetActive(false);
+            _cam2DView.gameObject.SetActive(true);
         }
     }
 }

@@ -10,7 +10,6 @@ public class ActivateCubesOnStart : PullObject
     [HideInInspector]public List<GameObject> _pull = new List<GameObject>();
     private Rigidbody _rb;
     private float _scaleCube;
-    private bool _firstTime = false;
     //загружаем префаб и если он не null, то создаем пул из 10 объектов
     public void LoadPrefab()
     {
