@@ -17,6 +17,7 @@ public class ChangeColorOnCollision : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Cube"))
         {
+            _tmp = null;
             _otherCubeMaterial = other.gameObject.GetComponent<MeshRenderer>().material;
             _tmp = _ownMaterial;
             _ownMaterial = _otherCubeMaterial;

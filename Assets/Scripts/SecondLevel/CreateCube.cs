@@ -15,7 +15,9 @@ public class CreateCube : UI
             if (Physics.Raycast(ray, out hit))
             {
                 if (hit.collider.CompareTag("City"))
+                {
                     InstantiateCube(hit);
+                }
             }
         }
     }
@@ -24,6 +26,7 @@ public class CreateCube : UI
     {
         _position = base._cam2DView.isActiveAndEnabled ? 
             new Vector3(hit.point.x, .1f, hit.point.z) : hit.point;
-        Instantiate(prefab, _position, Quaternion.identity);
+        GameObject go = Instantiate(prefab, _position, Quaternion.identity);
+        go.transform.parent = transform;
     }
 }

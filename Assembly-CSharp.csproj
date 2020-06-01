@@ -42,6 +42,9 @@
      <Compile Include="Assets\Scripts\FirstLevel\PullObject.cs" />
      <Compile Include="Assets\Scripts\FirstLevel\RestartButton.cs" />
      <Compile Include="Assets\Scripts\FirstLevel\SpawnNewCube.cs" />
+     <Compile Include="Assets\Scripts\Menu\LoadGame.cs" />
+     <Compile Include="Assets\Scripts\Menu\MenuUI.cs" />
+     <Compile Include="Assets\Scripts\Menu\SaveGame.cs" />
      <Compile Include="Assets\Scripts\SecondLevel\ChangeColor.cs" />
      <Compile Include="Assets\Scripts\SecondLevel\Controller.cs" />
      <Compile Include="Assets\Scripts\SecondLevel\CreateCube.cs" />
@@ -580,6 +583,9 @@
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>E:/unity proj/TestTaskSeveralLvls/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>E:/unity proj/TestTaskSeveralLvls/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>E:/unity proj/TestTaskSeveralLvls/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -598,17 +604,14 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>E:/unity proj/TestTaskSeveralLvls/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>E:/unity proj/TestTaskSeveralLvls/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>E:/unity proj/TestTaskSeveralLvls/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>E:/unity proj/TestTaskSeveralLvls/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-        <HintPath>E:/unity proj/TestTaskSeveralLvls/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-        <HintPath>E:/unity proj/TestTaskSeveralLvls/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
