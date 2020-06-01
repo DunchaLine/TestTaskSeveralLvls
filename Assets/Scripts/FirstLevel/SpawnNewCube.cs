@@ -5,8 +5,6 @@ using UnityEngine;
 public class SpawnNewCube : ActivateCubesOnStart
 {
     private GameObject _nullGameObject;
-    private Vector3 _mousePos;
-    private float _scale;
     //Загружаем на сцену пул объектов с загруженным заранее префабом
     void Awake()
     {

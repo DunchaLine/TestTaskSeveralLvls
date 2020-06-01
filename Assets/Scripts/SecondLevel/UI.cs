@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UI : ZoomCamera
+public class UI : MonoBehaviour
 {
     public Camera _cam2DView;
     public Camera _cam3DView;

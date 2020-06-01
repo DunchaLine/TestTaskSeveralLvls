@@ -13,7 +13,7 @@ public class ActivateCubesOnStart : PullObject
     //загружаем префаб и если он не null, то создаем пул из 10 объектов
     public void LoadPrefab()
     {
-        prefab  = Resources.Load<GameObject>("Prefabs/NormalCube");
+        prefab = Resources.Load<GameObject>("Prefabs/FirstLvl/NormalCube");
         _posParent = transform.position;
         if (prefab != null)
         {
@@ -40,7 +40,7 @@ public class ActivateCubesOnStart : PullObject
         go.SetActive(true);
     }
     //Характеристики куба
-    protected void SpecificationsCube(GameObject go)
+    public virtual void SpecificationsCube(GameObject go)
     {
         _scaleCube = Random.Range(.5f, 1.1f);
         go.transform.localScale = new Vector3(_scaleCube, _scaleCube, _scaleCube);
