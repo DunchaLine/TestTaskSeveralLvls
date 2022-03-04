@@ -2,15 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PullObject : MonoBehaviour
+public abstract class PullObject : MonoBehaviour
 {
 
-    public virtual void ActivateCube(GameObject go)
-    {
-
-    }
-    public virtual void DeactivateCube()
-    {
-
-    }
+    public abstract void ActivateCube(GameObject go);
 }

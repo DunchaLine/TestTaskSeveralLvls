@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
-public class ChangeColor : ActivateCubesOnStart
+
+public class ChangeColor : CubeSpawner
 {
+
     void Start()
     {
-        SpecificationsCube(gameObject);
+        SettingCube(gameObject);
     }
-    public override void SpecificationsCube(GameObject go)
+
+    public override void SettingCube(GameObject go)
     {
-        Debug.Log("material: " + materials[Random.Range(0, materials.Length)]);
-        go.GetComponent<MeshRenderer>().material = materials[Random.Range(0, materials.Length)];
+        Debug.Log("material: " + Materials[Random.Range(0, Materials.Length)]);
+        go.GetComponent<MeshRenderer>().material = Materials[Random.Range(0, Materials.Length)];
     }
 }
